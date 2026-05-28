@@ -7,6 +7,11 @@ type Props = {
   mode: "collapsible" | "open";
   /** Only used when mode = "collapsible" */
   defaultOpen?: boolean;
+  /**
+   * When set, this details element joins an exclusive group — only one
+   * details with the same name can be open at a time. Browser-native; no JS.
+   */
+  exclusiveGroup?: string;
 };
 
 function ServiceRow({
@@ -48,6 +53,7 @@ export function ServiceCategoryBlock({
   category,
   mode,
   defaultOpen = false,
+  exclusiveGroup,
 }: Props) {
   const services = (
     <ul className="px-5 md:px-6 pb-2">
@@ -83,6 +89,7 @@ export function ServiceCategoryBlock({
     <details
       id={category.id}
       open={defaultOpen}
+      name={exclusiveGroup}
       className="group bg-white border border-brand-border rounded-[14px] overflow-hidden scroll-mt-[80px] transition-colors [@media(hover:hover)]:hover:border-terracotta/60"
     >
       <summary className="flex items-center gap-3 px-5 md:px-6 py-5 min-h-[60px] cursor-pointer list-none">

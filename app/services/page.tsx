@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { SERVICE_CATEGORIES } from "@/lib/services";
 import { ServiceCategoryBlock } from "@/components/homepage/ServiceCategory";
+import { MenuHeader } from "@/components/services/MenuHeader";
 import { ctaLinks } from "@/lib/whatsapp";
 
 export const metadata: Metadata = {
@@ -23,11 +24,6 @@ export const metadata: Metadata = {
   },
 };
 
-const totalServices = SERVICE_CATEGORIES.reduce(
-  (n, c) => n + c.services.length,
-  0,
-);
-
 export default function ServicesPage() {
   return (
     <>
@@ -35,37 +31,7 @@ export default function ServicesPage() {
       <main className="flex-1">
         <section className="bg-gradient-to-b from-cream to-cream-darker">
           <Container className="py-[60px] md:py-[80px]">
-            <div className="text-center max-w-[720px] mx-auto">
-              <p className="text-[12px] font-bold tracking-[0.125em] text-terracotta uppercase">
-                The full menu
-              </p>
-              <h1 className="mt-3 font-serif font-semibold text-[34px] md:text-[48px] leading-[1.05] tracking-[-0.5px] text-ink">
-                Everything we do. Every price.
-              </h1>
-              <p className="mt-5 text-[16px] md:text-[18px] leading-[1.55] text-ink-soft">
-                {totalServices} services across{" "}
-                {SERVICE_CATEGORIES.length} categories. Tap{" "}
-                <strong className="text-terracotta">Book on WhatsApp</strong>{" "}
-                next to anything to message Merle with that exact request
-                pre-filled — she replies within the hour.
-              </p>
-            </div>
-
-            <nav
-              aria-label="Service categories"
-              className="mt-8 flex flex-wrap justify-center gap-2"
-            >
-              {SERVICE_CATEGORIES.map((c) => (
-                <a
-                  key={c.id}
-                  href={`#${c.id}`}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-white border border-brand-border px-3.5 py-2 text-[13px] text-ink-soft hover:border-terracotta hover:text-terracotta transition-colors"
-                >
-                  <span aria-hidden>{c.icon}</span>
-                  <span>{c.title}</span>
-                </a>
-              ))}
-            </nav>
+            <MenuHeader as="h1" />
           </Container>
         </section>
 

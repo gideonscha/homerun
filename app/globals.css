@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-terracotta: #c7613d;
+  --color-terracotta-dark: #a14a2a;
+  --color-cream: #faf6f1;
+  --color-cream-darker: #f3eadc;
+  --color-ink: #2a2520;
+  --color-ink-soft: #4a4035;
+  --color-muted-brand: #8a7960;
+  --color-brand-border: #ece4d8;
+  --color-whatsapp: #25d366;
+
+  --font-serif: Georgia, "Times New Roman", serif;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, sans-serif;
+
+  --tracking-tightbrand: -0.5px;
+  --tracking-eyebrow: 0.125em;
+
+  --container-brand: 1100px;
+}
+
+:root {
+  --background: var(--color-cream);
+  --foreground: var(--color-ink);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+}
+
+@media (hover: none) {
+  .hover-tooltip {
+    display: none !important;
+  }
+}
+
+details[open] > summary .faq-toggle {
+  transform: rotate(45deg);
+}
+
+details > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}

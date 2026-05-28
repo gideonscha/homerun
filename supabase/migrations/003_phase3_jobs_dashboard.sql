@@ -1,0 +1,33 @@
+-- PHASE 3 — do NOT apply yet. Lands once the ops dashboard ships.
+-- Sketch only; finalize when the dashboard requirements are clearer.
+
+-- jobs: a unit of work scheduled and run by Home Run.
+-- bookings can be created from a chat (Phase 2 'book_task' tool) or directly
+-- from the dashboard. Photos & status updates attach back here.
+
+-- create table public.jobs (
+--   id uuid primary key default gen_random_uuid(),
+--   contact_id uuid references public.contacts(id) on delete restrict,
+--   created_at timestamptz default now() not null,
+--   scheduled_for timestamptz,
+--   status text not null default 'requested',
+--     -- 'requested' | 'confirmed' | 'in_progress' | 'done' | 'cancelled'
+--   category text,            -- one of the seven service categories
+--   description text,
+--   address text,
+--   price_estimate_ils numeric(8,2),
+--   price_final_ils numeric(8,2),
+--   payment_method text,      -- 'bit' | 'transfer' | 'card'
+--   payment_status text,      -- 'unpaid' | 'paid'
+--   assignee text,            -- Merle or named helper
+--   internal_notes text
+-- );
+
+-- create table public.job_updates (
+--   id uuid primary key default gen_random_uuid(),
+--   job_id uuid references public.jobs(id) on delete cascade,
+--   created_at timestamptz default now() not null,
+--   author text,              -- 'merle' | 'helper:<name>' | 'system'
+--   note text,
+--   photo_url text
+-- );

@@ -30,7 +30,7 @@ export function Footer() {
             </a>
             <p className="mt-4 text-[13.5px] leading-[1.55] max-w-[280px]">
               The smart concierge for busy families in the Sharon. Vetted.
-              Insured. Bilingual. Same-day.
+              Insured. Same-day.
             </p>
           </div>
 

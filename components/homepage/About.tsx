@@ -26,7 +26,7 @@ export function About() {
               Meet Merle
             </p>
             <h2 className="mt-3 font-serif text-[28px] md:text-[34px] leading-[1.15] tracking-[-0.5px] text-ink">
-              Local. Bilingual. Lives this herself.
+              Local. Lives this herself.
             </h2>
             <p className="mt-5 text-[16px] leading-[1.65] text-ink-soft">
               Merle started Home Run because she knows what it&apos;s like to
@@ -35,9 +35,8 @@ export function About() {
               dread Misrad Harishui weeks in advance.
             </p>
             <p className="mt-4 text-[16px] leading-[1.65] text-ink-soft">
-              She&apos;s based in the Sharon, fully bilingual in Hebrew and
-              English, fully insured, and every job runs through her
-              personally.
+              She&apos;s based in the Sharon, fully insured, and every job
+              runs through her personally.
             </p>
 
             <blockquote className="mt-6 border-l-[3px] border-terracotta pl-4 italic font-serif text-[18px] md:text-[20px] leading-[1.5] text-terracotta">

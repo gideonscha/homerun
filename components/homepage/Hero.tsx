@@ -40,7 +40,7 @@ export function Hero() {
           </div>
 
           <p className="mt-7 text-[13.5px] text-muted-brand">
-            Vetted · Insured · Bilingual · Same-day response
+            Vetted · Insured · Same-day response
           </p>
         </div>
       </Container>

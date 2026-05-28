@@ -4,7 +4,6 @@ import { ctaLinks } from "@/lib/whatsapp";
 import { SERVICE_CATEGORIES } from "@/lib/services";
 
 const company = [
-  { label: "Full menu", href: "/services" },
   { label: "About Merle", href: "/#about" },
   { label: "How it works", href: "/#how" },
   { label: "Pricing", href: "/#pricing" },
@@ -41,10 +40,7 @@ export function Footer() {
             <ul className="mt-4 space-y-2.5 text-[14px]">
               {SERVICE_CATEGORIES.map((c) => (
                 <li key={c.id}>
-                  <a
-                    href={`/services#${c.id}`}
-                    className="hover:text-cream"
-                  >
+                  <a href={`/#${c.id}`} className="hover:text-cream">
                     {c.title}
                   </a>
                 </li>

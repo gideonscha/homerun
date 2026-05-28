@@ -21,7 +21,7 @@ const tiers: Tier[] = [
     body:
       "Fixed-price named services. No commitment. Best for trying us with one thing — pharmacy run, delivery wait, Misrad Harishui.",
     ctaLabel: "See the full menu →",
-    ctaHref: "/services",
+    ctaHref: "#services",
     ctaVariant: "outline",
   },
   {

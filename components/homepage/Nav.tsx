@@ -25,7 +25,7 @@ export function Nav() {
         </a>
 
         <nav className="hidden md:flex items-center gap-7 text-[14.5px] text-ink-soft">
-          <a href="/services" className="hover:text-terracotta">
+          <a href="/#services" className="hover:text-terracotta">
             Services
           </a>
           <a href="/#how" className="hover:text-terracotta">

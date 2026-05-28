@@ -21,16 +21,7 @@ export function Services() {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
-          <a
-            href="/services"
-            className="inline-flex items-center gap-1 text-terracotta font-medium hover:text-terracotta-dark min-h-[44px] px-2"
-          >
-            See the full menu →
-          </a>
-        </div>
-
-        <p className="mt-6 text-center text-[16px] text-ink-soft">
+        <p className="mt-10 text-center text-[16px] text-ink-soft">
           Don&apos;t see it?{" "}
           <strong className="text-terracotta font-semibold">Just ask.</strong>{" "}
           If it&apos;s within reason, we&apos;ll figure it out.

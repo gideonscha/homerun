@@ -25,16 +25,16 @@ export function Nav() {
         </a>
 
         <nav className="hidden md:flex items-center gap-7 text-[14.5px] text-ink-soft">
-          <a href="#services" className="hover:text-terracotta">
+          <a href="/services" className="hover:text-terracotta">
             Services
           </a>
-          <a href="#how" className="hover:text-terracotta">
+          <a href="/#how" className="hover:text-terracotta">
             How it works
           </a>
-          <a href="#about" className="hover:text-terracotta">
+          <a href="/#about" className="hover:text-terracotta">
             About Merle
           </a>
-          <a href="#faq" className="hover:text-terracotta">
+          <a href="/#faq" className="hover:text-terracotta">
             FAQ
           </a>
         </nav>

@@ -1,22 +1,14 @@
 import { Container } from "@/components/ui/Container";
 import { CONTACT_EMAIL } from "@/lib/constants";
 import { ctaLinks } from "@/lib/whatsapp";
-
-const services = [
-  "Home & Deliveries",
-  "Errands & Pickups",
-  "Shopping",
-  "Government",
-  "Family",
-  "Parents",
-  "Travel & Hosting",
-];
+import { SERVICE_CATEGORIES } from "@/lib/services";
 
 const company = [
-  { label: "About Merle", href: "#about" },
-  { label: "How it works", href: "#how" },
-  { label: "Pricing", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Full menu", href: "/services" },
+  { label: "About Merle", href: "/#about" },
+  { label: "How it works", href: "/#how" },
+  { label: "Pricing", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Footer() {
@@ -47,10 +39,13 @@ export function Footer() {
               Services
             </h3>
             <ul className="mt-4 space-y-2.5 text-[14px]">
-              {services.map((s) => (
-                <li key={s}>
-                  <a href="#services" className="hover:text-cream">
-                    {s}
+              {SERVICE_CATEGORIES.map((c) => (
+                <li key={c.id}>
+                  <a
+                    href={`/services#${c.id}`}
+                    className="hover:text-cream"
+                  >
+                    {c.title}
                   </a>
                 </li>
               ))}

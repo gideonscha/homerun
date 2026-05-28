@@ -51,6 +51,7 @@ export default function OG() {
 
         <div
           style={{
+            display: "flex",
             fontSize: 84,
             fontWeight: 600,
             letterSpacing: -1.5,
@@ -58,13 +59,14 @@ export default function OG() {
             maxWidth: 900,
           }}
         >
-          Get your{" "}
-          <span style={{ color: "#c7613d", fontStyle: "italic" }}>week</span>{" "}
-          back.
+          Get your&nbsp;
+          <span style={{ color: "#c7613d", fontStyle: "italic" }}>week</span>
+          &nbsp;back.
         </div>
 
         <div
           style={{
+            display: "flex",
             marginTop: 28,
             fontSize: 28,
             color: "#4a4035",
@@ -80,6 +82,7 @@ export default function OG() {
 
         <div
           style={{
+            display: "flex",
             marginTop: "auto",
             fontSize: 20,
             color: "#8a7960",

@@ -43,18 +43,6 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         description:
           "Bezeq, Hot, or Cellcom install — we handle the wait and the access.",
       },
-      {
-        name: "Mid-travel home check",
-        price: "₪120/visit",
-        description:
-          "While you're away, we check the home: security, post, all well.",
-      },
-      {
-        name: "Plant watering + mail collection",
-        price: "quoted",
-        description:
-          "Extended-trip care: plants watered, mail collected, home kept alive.",
-      },
     ],
   },
   {
@@ -294,6 +282,18 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         name: "Pet drop-off at boarding",
         price: "₪180",
         description: "Your pet delivered to boarding when you travel.",
+      },
+      {
+        name: "Mid-travel home check",
+        price: "₪120/visit",
+        description:
+          "While you're away, we check the home: security, post, all well.",
+      },
+      {
+        name: "Plant watering + mail collection",
+        price: "quoted",
+        description:
+          "Extended-trip care: plants watered, mail collected, home kept alive.",
       },
     ],
   },

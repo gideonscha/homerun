@@ -129,9 +129,9 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     ],
   },
   {
-    id: "government-and-admin",
+    id: "government-and-queues",
     icon: "🏛️",
-    title: "Government & Admin",
+    title: "Government & Queues",
     services: [
       {
         name: "Misrad Hapnim",

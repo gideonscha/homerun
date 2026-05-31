@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { ctaLinks } from "@/lib/whatsapp";
+import { DiaryCard } from "./DiaryCard";
 
 export function Hero() {
   return (
@@ -9,39 +10,50 @@ export function Hero() {
       className="relative bg-gradient-to-b from-cream to-cream-darker"
     >
       <Container className="py-[50px] md:py-[80px]">
-        <div className="flex flex-col items-center text-center">
-          <h1 className="font-serif font-semibold text-[38px] md:text-[56px] leading-[1.05] tracking-[-0.5px] text-ink max-w-[760px]">
-            Get your <em className="italic text-terracotta">week</em> back.
-          </h1>
-          <p className="mt-5 md:mt-6 text-[17px] md:text-[19px] leading-[1.5] text-ink-soft max-w-[560px]">
-            We run the errands, waits, and queues that eat your days. You run
-            your life.
-          </p>
+        <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 md:gap-14 items-center">
+          {/* Copy column */}
+          <div className="text-center md:text-left">
+            <p className="text-[12px] font-bold tracking-[0.125em] text-terracotta uppercase">
+              Ra&apos;anana · Herzliya · Kfar Saba · the Sharon
+            </p>
 
-          <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
-            <Button
-              href={ctaLinks.general}
-              target="_blank"
-              rel="noopener noreferrer"
-              variant="primary"
-              size="lg"
-              className="w-full sm:w-auto"
-            >
-              Message us on WhatsApp
-            </Button>
-            <Button
-              href="#services"
-              variant="outline"
-              size="lg"
-              className="w-full sm:w-auto"
-            >
-              See what we do
-            </Button>
+            <h1 className="mt-4 font-serif font-semibold text-[38px] md:text-[56px] leading-[1.05] tracking-[-0.5px] text-ink">
+              Get your <em className="italic text-terracotta">week</em> back.
+            </h1>
+
+            <p className="mt-5 md:mt-6 text-[17px] md:text-[19px] leading-[1.5] text-ink-soft max-w-[520px] mx-auto md:mx-0">
+              We run the errands, waits, and queues that eat your days. You
+              run your life.
+            </p>
+
+            <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center justify-center md:justify-start">
+              <Button
+                href={ctaLinks.general}
+                target="_blank"
+                rel="noopener noreferrer"
+                variant="primary"
+                size="lg"
+                className="w-full sm:w-auto"
+              >
+                Message us on WhatsApp
+              </Button>
+              <a
+                href="#services"
+                className="inline-flex items-center justify-center gap-1 text-terracotta font-medium hover:text-terracotta-dark min-h-[44px] px-2"
+              >
+                See what we do →
+              </a>
+            </div>
+
+            <p className="mt-7 text-[13.5px] text-muted-brand">
+              Vetted · Insured · Same-day response
+            </p>
           </div>
 
-          <p className="mt-7 text-[13.5px] text-muted-brand">
-            Vetted · Insured · Same-day response
-          </p>
+          {/* Diary card column */}
+          <div className="flex justify-center md:justify-end">
+            <DiaryCard />
+          </div>
         </div>
       </Container>
     </section>

@@ -33,13 +33,18 @@ export default function OG() {
           <svg
             width="48"
             height="48"
-            viewBox="0 0 32 32"
+            viewBox="0 0 48 48"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <circle cx="16" cy="16" r="13.25" fill="none" stroke="#c7613d" strokeWidth="1.75" />
-            <circle cx="16" cy="16" r="9" fill="none" stroke="#c7613d" strokeWidth="1.75" />
-            <circle cx="16" cy="16" r="5" fill="none" stroke="#c7613d" strokeWidth="1.75" />
-            <circle cx="16" cy="16" r="2" fill="#c7613d" />
+            <circle cx="24" cy="24" r="22" fill="#c7613d" />
+            <path
+              d="M14 24.5 L21.5 32 L34 16"
+              fill="none"
+              stroke="#faf6f1"
+              strokeWidth="4.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
           <div style={{ fontSize: 30, fontWeight: 600, letterSpacing: -0.5 }}>
             Home Run

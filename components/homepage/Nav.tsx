@@ -1,5 +1,5 @@
 import { Container } from "@/components/ui/Container";
-import { BullseyeMark } from "@/components/ui/BullseyeMark";
+import { TickMark } from "@/components/ui/TickMark";
 import { ctaLinks } from "@/lib/whatsapp";
 
 export function Nav() {
@@ -14,7 +14,7 @@ export function Nav() {
           className="flex items-center gap-2.5"
           aria-label="Home Run — back to top"
         >
-          <BullseyeMark className="text-terracotta" size={32} />
+          <TickMark size={32} />
           <span className="font-serif font-semibold text-[21px] tracking-[-0.5px] text-ink">
             Home Run
           </span>

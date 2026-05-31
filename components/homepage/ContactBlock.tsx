@@ -1,3 +1,4 @@
+import { MessageCircle, Mail } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { CONTACT_EMAIL, BUSINESS_HOURS } from "@/lib/constants";
@@ -36,7 +37,8 @@ export function ContactBlock() {
               size="lg"
               className="w-full sm:w-auto"
             >
-              💬 WhatsApp Merle
+              <MessageCircle size={18} strokeWidth={1.75} aria-hidden />
+              WhatsApp Merle
             </Button>
             <Button
               href={`mailto:${CONTACT_EMAIL}`}
@@ -44,7 +46,8 @@ export function ContactBlock() {
               size="lg"
               className="w-full sm:w-auto"
             >
-              ✉ Email instead
+              <Mail size={18} strokeWidth={1.75} aria-hidden />
+              Email instead
             </Button>
           </div>
 

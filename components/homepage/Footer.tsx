@@ -1,4 +1,5 @@
 import { Container } from "@/components/ui/Container";
+import { BullseyeMark } from "@/components/ui/BullseyeMark";
 import { CONTACT_EMAIL } from "@/lib/constants";
 import { ctaLinks } from "@/lib/whatsapp";
 import { SERVICE_CATEGORIES } from "@/lib/services";
@@ -17,12 +18,7 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 md:gap-10">
           <div className="col-span-2 md:col-span-1">
             <a href="#top" className="flex items-center gap-2.5">
-              <span
-                className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-terracotta text-[16px] leading-none"
-                aria-hidden
-              >
-                🎯
-              </span>
+              <BullseyeMark className="text-terracotta" size={32} />
               <span className="font-serif font-semibold text-[21px] text-cream tracking-[-0.5px]">
                 Home Run
               </span>

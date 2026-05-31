@@ -30,20 +30,17 @@ export default function OG() {
             marginBottom: 40,
           }}
         >
-          <div
-            style={{
-              width: 48,
-              height: 48,
-              borderRadius: 999,
-              background: "#c7613d",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 26,
-            }}
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 32 32"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            🎯
-          </div>
+            <circle cx="16" cy="16" r="13.25" fill="none" stroke="#c7613d" strokeWidth="1.75" />
+            <circle cx="16" cy="16" r="9" fill="none" stroke="#c7613d" strokeWidth="1.75" />
+            <circle cx="16" cy="16" r="5" fill="none" stroke="#c7613d" strokeWidth="1.75" />
+            <circle cx="16" cy="16" r="2" fill="#c7613d" />
+          </svg>
           <div style={{ fontSize: 30, fontWeight: 600, letterSpacing: -0.5 }}>
             Home Run
           </div>

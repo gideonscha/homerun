@@ -63,6 +63,8 @@ export function ServiceCategoryBlock({
     </ul>
   );
 
+  const Icon = category.icon;
+
   if (mode === "open") {
     return (
       <section
@@ -70,9 +72,12 @@ export function ServiceCategoryBlock({
         className="bg-white border border-brand-border rounded-[14px] overflow-hidden scroll-mt-[80px]"
       >
         <header className="flex items-center gap-3 px-5 md:px-6 pt-6 pb-4 border-b border-brand-border">
-          <span className="text-[26px] leading-none" aria-hidden>
-            {category.icon}
-          </span>
+          <Icon
+            className="text-terracotta shrink-0"
+            size={24}
+            strokeWidth={1.75}
+            aria-hidden
+          />
           <h3 className="font-serif text-[20px] md:text-[22px] text-ink">
             {category.title}
           </h3>
@@ -93,9 +98,12 @@ export function ServiceCategoryBlock({
       className="group bg-white border border-brand-border rounded-[14px] overflow-hidden scroll-mt-[80px] transition-colors [@media(hover:hover)]:hover:border-terracotta/60"
     >
       <summary className="flex items-center gap-3 px-5 md:px-6 py-5 min-h-[60px] cursor-pointer list-none">
-        <span className="text-[26px] leading-none" aria-hidden>
-          {category.icon}
-        </span>
+        <Icon
+          className="text-terracotta shrink-0"
+          size={24}
+          strokeWidth={1.75}
+          aria-hidden
+        />
         <div className="flex-1 min-w-0">
           <h3 className="font-serif text-[19px] md:text-[20px] text-ink leading-snug">
             {category.title}

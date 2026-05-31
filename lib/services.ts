@@ -1,3 +1,13 @@
+import {
+  Package,
+  Footprints,
+  ShoppingCart,
+  Landmark,
+  Users,
+  HeartHandshake,
+  Plane,
+  type LucideIcon,
+} from "lucide-react";
 import { whatsappLink } from "./whatsapp";
 
 export type Service = {
@@ -8,7 +18,7 @@ export type Service = {
 
 export type ServiceCategory = {
   id: string; // slug, e.g. "home-and-deliveries"
-  icon: string; // emoji
+  icon: LucideIcon;
   title: string;
   services: Service[];
 };
@@ -16,7 +26,7 @@ export type ServiceCategory = {
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: "home-and-deliveries",
-    icon: "🏠",
+    icon: Package,
     title: "Home & Deliveries",
     services: [
       {
@@ -47,7 +57,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "errands-and-pickups",
-    icon: "📬",
+    icon: Footprints,
     title: "Errands & Pickups",
     services: [
       {
@@ -95,7 +105,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "shopping",
-    icon: "🛒",
+    icon: ShoppingCart,
     title: "Shopping",
     services: [
       {
@@ -130,7 +140,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "government-and-queues",
-    icon: "🏛️",
+    icon: Landmark,
     title: "Government & Queues",
     services: [
       {
@@ -176,7 +186,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "family-logistics",
-    icon: "👨‍👩‍👧",
+    icon: Users,
     title: "Family Logistics",
     services: [
       {
@@ -215,7 +225,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "parents-and-elder-care",
-    icon: "❤️",
+    icon: HeartHandshake,
     title: "Parents & Elder Care",
     services: [
       {
@@ -251,7 +261,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: "travel-and-hosting",
-    icon: "✈️",
+    icon: Plane,
     title: "Travel & Hosting",
     services: [
       {

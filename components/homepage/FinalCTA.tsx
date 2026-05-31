@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { CONTACT_EMAIL } from "@/lib/constants";
@@ -25,7 +26,8 @@ export function FinalCTA() {
               variant="primary"
               size="lg"
             >
-              💬 Message Merle on WhatsApp
+              <MessageCircle size={18} strokeWidth={1.75} aria-hidden />
+              Message Merle on WhatsApp
             </Button>
           </div>
 

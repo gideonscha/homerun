@@ -32,17 +32,20 @@ export function CategoryPills({ interactive = false }: Props) {
       aria-label="Service categories"
       className="mt-8 flex flex-wrap justify-center gap-2"
     >
-      {SERVICE_CATEGORIES.map((c) => (
-        <a
-          key={c.id}
-          href={`#${c.id}`}
-          onClick={(e) => onClick(e, c.id)}
-          className="inline-flex items-center gap-1.5 rounded-full bg-white border border-brand-border px-3.5 py-2 text-[13px] text-ink-soft hover:border-terracotta hover:text-terracotta transition-colors min-h-[36px]"
-        >
-          <span aria-hidden>{c.icon}</span>
-          <span>{c.title}</span>
-        </a>
-      ))}
+      {SERVICE_CATEGORIES.map((c) => {
+        const Icon = c.icon;
+        return (
+          <a
+            key={c.id}
+            href={`#${c.id}`}
+            onClick={(e) => onClick(e, c.id)}
+            className="inline-flex items-center gap-2 rounded-full bg-white border border-brand-border px-3.5 py-2 text-[13px] text-ink-soft hover:border-terracotta hover:text-terracotta transition-colors min-h-[36px]"
+          >
+            <Icon className="text-terracotta" size={15} strokeWidth={1.75} aria-hidden />
+            <span>{c.title}</span>
+          </a>
+        );
+      })}
     </nav>
   );
 }

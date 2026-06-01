@@ -9,15 +9,11 @@ export function Hero() {
       id="top"
       className="relative bg-gradient-to-b from-cream to-cream-darker"
     >
-      <Container className="py-[50px] md:py-[80px]">
+      <Container className="pt-6 md:pt-10 pb-[40px] md:pb-[60px]">
         <div className="grid grid-cols-1 md:grid-cols-[1.05fr_1fr] gap-10 md:gap-14 items-center">
           {/* Copy column */}
           <div className="text-center md:text-left">
-            <p className="text-[12px] font-bold tracking-[0.125em] text-terracotta uppercase">
-              Ra&apos;anana · Herzliya · Kfar Saba · the Sharon
-            </p>
-
-            <h1 className="mt-4 font-serif font-semibold text-[38px] md:text-[56px] leading-[1.05] tracking-[-0.5px] text-ink">
+            <h1 className="font-serif font-semibold text-[38px] md:text-[56px] leading-[1.05] tracking-[-0.5px] text-ink">
               Get your <em className="italic text-terracotta">week</em> back.
             </h1>
 

@@ -18,8 +18,8 @@ export function Hero() {
             </h1>
 
             <p className="mt-5 md:mt-6 text-[17px] md:text-[19px] leading-[1.5] text-ink-soft max-w-[520px] mx-auto md:mx-0">
-              We run the errands, waits, and queues that eat your days. You
-              run your life.
+              We run the family errands, waits, and queues that eat your
+              days. You run your life.
             </p>
 
             <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-3 sm:gap-4 items-stretch sm:items-center justify-center md:justify-start">

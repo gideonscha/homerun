@@ -156,22 +156,6 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
           "Licence and car-registration errands, queue included.",
       },
       {
-        name: "Bituach Leumi",
-        price: "₪250/hr",
-        description:
-          "In-person submissions and paperwork at National Insurance.",
-      },
-      {
-        name: "Bank visit",
-        price: "₪200",
-        description: "Signatures and paperwork drop-offs at the branch.",
-      },
-      {
-        name: "Mas Hachnasa / VAT office",
-        price: "₪250/hr",
-        description: "Tax and VAT submissions on your behalf.",
-      },
-      {
         name: "Notary accompaniment",
         price: "₪250/hr",
         description: "We accompany or queue at the notary's office.",
@@ -251,12 +235,6 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         description:
           "We manage repairs and visits at your parents' home.",
       },
-      {
-        name: "Bituach Leumi / bank paperwork",
-        price: "₪250/hr",
-        description:
-          "Errands and submissions handled on their behalf.",
-      },
     ],
   },
   {
@@ -271,27 +249,10 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
           "AC on, fresh groceries, flowers — home ready when you land.",
       },
       {
-        name: "Pre-Shabbat home prep",
-        price: "₪220",
-        description:
-          "Home readied for Shabbat before you finish work.",
-      },
-      {
-        name: "Pre-chag prep",
-        price: "quoted",
-        description:
-          "Rosh Hashana, Pesach and more — the full pre-holiday setup.",
-      },
-      {
         name: "Pre-guest hosting prep",
         price: "₪220",
         description:
           "Groceries, flowers, fresh towels, fridge stocked for guests.",
-      },
-      {
-        name: "Pet drop-off at boarding",
-        price: "₪180",
-        description: "Your pet delivered to boarding when you travel.",
       },
       {
         name: "Mid-travel home check",
